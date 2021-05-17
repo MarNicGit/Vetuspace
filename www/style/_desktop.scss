@@ -1,0 +1,50 @@
+@use "sass:color";
+desktop-base {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background-color: $bg-color;
+  padding: $desktop-padding;
+}
+
+desktop-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: $desktop-icon-size;
+  .wrapper,img {
+    width: $desktop-icon-size;
+    height: $desktop-icon-size;
+    position: relative;
+  }
+
+  label {
+    margin-top: 8px;
+    font-size: $desktop-icon-text-size;
+  }
+  &.selected {
+    color: white;
+
+    $adjusted-bg: color.scale($bg-color, $lightness: -25%);
+
+    .wrapper::after {
+      content: " ";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($adjusted-bg, 50%);
+    }
+    label {
+      background-color: $adjusted-bg;
+      padding: 2px 4px;
+    }
+  }
+
+  &.lastSelected{
+      label{
+          border: 1px dashed #333;
+      }
+  }
+}
