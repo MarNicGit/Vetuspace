@@ -1,7 +1,7 @@
 {
-  "name": "bunscape",
+  "name": "vetuspace",
   "version": "1.0.0",
-  "description": "90s browser",
+  "description": "90s-like desktop environment and internet",
   "main": "index.js",
   "scripts": {
     "build": "webpack",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MarNicGit/Bunscape.git"
+    "url": "git+https://github.com/MarNicGit/Vetuspace.git"
   },
   "author": "MarNicGit",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/MarNicGit/Bunscape/issues"
+    "url": "https://github.com/MarNicGit/Vetuspace/issues"
   },
-  "homepage": "https://github.com/MarNicGit/Bunscape#readme",
+  "homepage": "https://github.com/MarNicGit/Vetuspace#readme",
   "devDependencies": {
     "css-loader": "^5.2.4",
     "extract-loader": "^5.1.0",
