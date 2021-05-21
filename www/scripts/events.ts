@@ -1,0 +1,1 @@
+export const desktopUnselect = new Event('desktopUnselect', {bubbles:true});

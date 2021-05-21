@@ -5,6 +5,7 @@ desktop-base {
   height: 100vh;
   background-color: $bg-color;
   padding: $desktop-padding;
+  user-select: none;
 }
 
 desktop-icon {

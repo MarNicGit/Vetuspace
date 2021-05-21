@@ -1,4 +1,4 @@
-import { DesktopIcon } from "./desktopIcon";
+import { desktopUnselect } from "../events";
 
 export class Desktop extends HTMLElement {
     constructor(){
@@ -14,11 +14,6 @@ export class Desktop extends HTMLElement {
     }
 
     onClick(e: MouseEvent){
-        e.stopPropagation();
-        let icons = document.getElementsByTagName('desktop-icon');
-        for (let index = 0; index < icons.length; index++) {
-            const icon = icons[index] as DesktopIcon;
-            icon.unselect();
-        }
+        this.dispatchEvent(desktopUnselect);
     }
 }

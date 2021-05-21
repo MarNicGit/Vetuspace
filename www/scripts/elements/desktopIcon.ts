@@ -1,3 +1,5 @@
+import { desktopUnselect } from "../events";
+
 export class DesktopIcon extends HTMLElement {
     constructor(){
         super();
@@ -12,6 +14,7 @@ export class DesktopIcon extends HTMLElement {
     registerListeners(){
         this.addEventListener('dblclick', this.onDoubleClick)
         this.addEventListener('click', this.onClick)
+        document.addEventListener(desktopUnselect.type, ()=>{this.unselect()})
     }
 
     onClick(e: MouseEvent){
