@@ -41,11 +41,12 @@ export class DesktopIcon extends HTMLElement {
 
         let iconWrapper = document.createElement('div');
         iconWrapper.className = "wrapper";
-        iconWrapper.innerHTML = icon.outerHTML;
+        iconWrapper.appendChild(icon);
 
         let label = document.createElement('label');
         label.innerText = title;
 
-        this.innerHTML = iconWrapper.outerHTML + label.outerHTML;
+        this.appendChild(iconWrapper);
+        this.appendChild(label);
     }
 }
