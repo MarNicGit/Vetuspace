@@ -1,4 +1,4 @@
-import { desktopUnselect } from "../events";
+import { desktopUnselectEvent } from "../events";
 
 export class Desktop extends HTMLElement {
     constructor(){
@@ -6,6 +6,7 @@ export class Desktop extends HTMLElement {
     }
 
     connectedCallback(){
+        this.id = Desktop.name;
         this.registerListeners();
     }
 
@@ -14,6 +15,6 @@ export class Desktop extends HTMLElement {
     }
 
     onClick(e: MouseEvent){
-        this.dispatchEvent(desktopUnselect);
+        this.dispatchEvent(desktopUnselectEvent);
     }
 }

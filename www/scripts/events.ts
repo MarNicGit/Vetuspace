@@ -1,1 +1,2 @@
-export const desktopUnselect = new Event('desktopUnselect', {bubbles:true});
+export const desktopUnselectEvent = new Event('desktopUnselectEvent', {bubbles:true});
+export const spawnWindowEvent = new Event('spawnWindowEvent', {bubbles:true});

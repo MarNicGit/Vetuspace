@@ -1,4 +1,6 @@
-import { desktopUnselect } from "../events";
+import { desktopUnselectEvent } from "../events";
+import { Browser } from "./browser/browser";
+import { VetuOSWindowElement } from "./window";
 
 export class DesktopIcon extends HTMLElement {
     constructor(){
@@ -14,7 +16,7 @@ export class DesktopIcon extends HTMLElement {
     registerListeners(){
         this.addEventListener('dblclick', this.onDoubleClick)
         this.addEventListener('click', this.onClick)
-        document.addEventListener(desktopUnselect.type, ()=>{this.unselect()})
+        document.addEventListener(desktopUnselectEvent.type, ()=>{this.unselect()})
     }
 
     onClick(e: MouseEvent){
@@ -23,8 +25,12 @@ export class DesktopIcon extends HTMLElement {
     }
 
     onDoubleClick(e: MouseEvent){
-        console.log(e);
-        this.unselect();
+        let windowElement = document.createElement(Browser.elementName);
+        let spawnWindowEvent = new CustomEvent('spawnWindowEvent', {
+            bubbles: true,
+            detail: windowElement
+        });
+        this.dispatchEvent(spawnWindowEvent);
     }
 
     select(){
