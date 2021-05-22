@@ -9,6 +9,7 @@ export class Browser extends VetuOSWindowElement {
     }
 
     connectedCallback(){
+        super.connectedCallback();
         this.registerListeners();
         this.render();
     }
@@ -18,10 +19,11 @@ export class Browser extends VetuOSWindowElement {
     }
 
     render(){
-        let addressbar = document.createElement(BrowserAddressbar.name);
-        let body = document.createElement(BrowserBody.name);
+        let addressbar = document.createElement(BrowserAddressbar.elementName);
+        let body = document.createElement(BrowserBody.elementName);
 
         this.appendChild(addressbar);
         this.appendChild(body);
+
     }
 }

@@ -49,3 +49,11 @@ desktop-icon {
       }
   }
 }
+
+.window{
+  border-image-slice: 3 3 3 3;
+  border-image-width: 3px 3px 3px 3px;
+  border-image-outset: 0px 0px 0px 0px;
+  border-image-repeat: stretch stretch;
+  border-image-source: url("/assets/desktop/border.png");
+}
