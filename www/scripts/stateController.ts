@@ -3,23 +3,35 @@ import { VetuOSWindowElement } from "./elements/window";
 import { spawnWindowEvent } from "./events";
 
 export class StateController {
-    desktop: Desktop;
-
     constructor() {
-        document.addEventListener('DOMContentLoaded', (event) => {
-            console.log('ready');
-            this.desktop = document.getElementById(Desktop.name) as Desktop;
-          })
         this.registerListeners();
     }
 
-    private registerListeners(){
-        document.addEventListener(spawnWindowEvent.type, (w: CustomEvent)=>{
-            this.spawnWindow(w.detail);
-        })
+    private static _controllerInstance: StateController;
+    public static get instance() {
+        if (!this._controllerInstance) {
+            this._controllerInstance = new StateController();
+        }
+
+        return this._controllerInstance;
     }
 
-    public spawnWindow(window: VetuOSWindowElement){
+    private _desktopElement : HTMLElement;
+    private get desktop(){
+        if(!this._desktopElement){
+            this._desktopElement = document.getElementById(Desktop.name) as Desktop;
+        }
+
+        return this._desktopElement;
+    }
+
+    private registerListeners() {
+        // document.addEventListener(spawnWindowEvent.type, (w: CustomEvent) => {
+        //     this.spawnWindow(w.detail);
+        // })
+    }
+
+    public spawnWindow(window: VetuOSWindowElement) {
         this.desktop.appendChild(window);
     }
 }

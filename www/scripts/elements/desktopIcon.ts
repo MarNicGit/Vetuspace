@@ -1,8 +1,10 @@
 import { desktopUnselectEvent } from "../events";
+import { StateController } from "../stateController";
 import { Browser } from "./browser/browser";
 import { VetuOSWindowElement } from "./window";
 
 export class DesktopIcon extends HTMLElement {
+    static elementName = 'desktop-icon';
     constructor(){
         super();
     }
@@ -25,12 +27,8 @@ export class DesktopIcon extends HTMLElement {
     }
 
     onDoubleClick(e: MouseEvent){
-        let windowElement = document.createElement(Browser.elementName);
-        let spawnWindowEvent = new CustomEvent('spawnWindowEvent', {
-            bubbles: true,
-            detail: windowElement
-        });
-        this.dispatchEvent(spawnWindowEvent);
+        let windowElement = document.createElement(Browser.elementName) as VetuOSWindowElement;
+        StateController.instance.spawnWindow(windowElement);
     }
 
     select(){

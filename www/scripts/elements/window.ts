@@ -5,7 +5,7 @@ export class VetuOSWindowElement extends HTMLElement {
         super();
     }
 
-connectedCallback(){
+    connectedCallback(){
         this.classList.add('window');
         this.dispatchEvent(desktopUnselectEvent);
     }

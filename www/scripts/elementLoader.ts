@@ -8,8 +8,8 @@ import { DesktopIcon } from "./elements/desktopIcon";
 
 export class ElementLoader {
     constructor() {
-        customElements.define('desktop-base', Desktop);
-        customElements.define('desktop-icon', DesktopIcon);
+        customElements.define(Desktop.elementName, Desktop);
+        customElements.define(DesktopIcon.elementName, DesktopIcon);
         customElements.define(Browser.elementName, Browser);
         customElements.define(BrowserAddressbar.elementName, BrowserAddressbar);
         customElements.define(BrowserBody.elementName, BrowserBody);
