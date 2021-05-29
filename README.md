@@ -17,3 +17,6 @@ ADA :   DdzFFzCqrhsrvj3Wsi2D92JfjkW7k9qtkFhvUivSL3mQQgHgKyFcAZ3digTjAy5kYXDieiDn
 ```
 
 Thanks!
+
+## Attributions
+[Verdana 2 by Paul Spades](http://www.pentacom.jp/pentacom/bitfontmaker2/gallery/?id=278)
