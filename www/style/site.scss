@@ -4,3 +4,8 @@
 @import "typography";
 @import "desktop";
 @import "bunscape";
+
+// css vars
+*{
+    --desktop-scale: 2.0;
+}

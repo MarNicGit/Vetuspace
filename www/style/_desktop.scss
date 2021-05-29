@@ -1,11 +1,14 @@
 @use "sass:color";
 desktop-base {
   display: block;
-  width: 100vw;
-  height: 100vh;
+  width: calc(100vw / var(--desktop-scale));
+  height: calc(100vh / var(--desktop-scale));
   background-color: $bg-color;
   padding: $desktop-padding;
   user-select: none;
+
+  transform: scale(var(--desktop-scale));
+  transform-origin: top left;
 }
 
 desktop-icon {
@@ -20,8 +23,13 @@ desktop-icon {
   }
 
   label {
-    margin-top: 8px;
     font-size: $desktop-icon-text-size;
+    line-height: 18px;
+    padding-bottom: 8px;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-top: 4px;
+    text-align: center;
   }
   &.selected {
     color: white;
@@ -39,7 +47,6 @@ desktop-icon {
     }
     label {
       background-color: $adjusted-bg;
-      padding: 2px 4px;
     }
   }
 
