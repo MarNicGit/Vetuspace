@@ -1,11 +1,11 @@
 const path = require('path');
 
 module.exports = {
-    entry: ['./www/scripts/main.ts', './www/style/site.scss'],
+    entry: ['./scripts/main.ts', './style/site.scss'],
     devtool: 'source-map',
     output: {
-      filename: 'main.js',
-      path: path.resolve(__dirname, 'www'),
+      filename: 'js/main.js',
+      path: path.resolve(__dirname, 'wwwroot'),
     },
     module: {
       rules: [
