@@ -1,5 +1,8 @@
 {
     "recommendations": [
-        "jeremyrajan.webpack"
+        "jeremyrajan.webpack",
+        "visualstudioexptteam.vscodeintellicode",
+        "ms-dotnettools.csharp",
+        "compulim.compulim-vscode-closetag"
     ]
 }
