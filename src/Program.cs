@@ -1,3 +1,4 @@
+using log4net;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +18,12 @@ else
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
+
+LoggerFactory loggerFactory = new();
+loggerFactory.AddLog4Net("log4net.config");
+
+ILog _log = LogManager.GetLogger(typeof(Logger));  
+_log.Info("Started!");
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
