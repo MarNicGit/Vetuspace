@@ -4,7 +4,7 @@ A 90's desktop environment inside your browser, along with a neat little Netscap
 Websites are loaded from the [websites repo](https://github.com/MarNicGit/Vetuspace-Websites).
 
 ## Build
-Just clone the repository and run `npm build`.
+Just clone the repository, navigate to the `src` directory and run `dotnet watch run`.
 
 ## Donate
 If you want to support my work, feel free to donate some crypto:
