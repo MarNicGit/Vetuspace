@@ -1,10 +1,17 @@
 export class DesktopIcon extends HTMLElement {
+    title:string;
+    action:string;
+    iconUrl:string;
+
     constructor(){
         super();
     }
 
     connectedCallback(){
-        console.log('element added!');
+        this.title = this.getAttribute('title');
+        this.action = this.getAttribute('action');
+        this.iconUrl = this.getAttribute('icon');
+
         this.registerListeners();
         this.render();
     }
@@ -33,18 +40,15 @@ export class DesktopIcon extends HTMLElement {
     }
 
     render(){
-        let title = this.getAttribute('title');
-        let iconUrl = this.getAttribute('icon');
-
         let icon = document.createElement('img' )
-        icon.src = iconUrl;
+        icon.src = this.iconUrl;
 
         let iconWrapper = document.createElement('div');
         iconWrapper.className = "wrapper";
         iconWrapper.innerHTML = icon.outerHTML;
 
         let label = document.createElement('label');
-        label.innerText = title;
+        label.innerText = this.title;
 
         this.innerHTML = iconWrapper.outerHTML + label.outerHTML;
     }
