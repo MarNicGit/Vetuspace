@@ -17,6 +17,7 @@
 		"scss.lint.important": "warning",
 		"scss.lint.hexColorLength": "error",
 		"scss.lint.float": "error",
-		"scss.lint.emptyRules": "error"
+		"scss.lint.emptyRules": "error",
+		"editor.renderWhitespace": "trailing"
 	}
 }

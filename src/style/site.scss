@@ -1,5 +1,6 @@
-@import "var";
+@use "var";
 
-@import "layout";
-@import "typography";
-@import "desktop";
+@use "layout";
+@use "typography";
+@use "desktop";
+@use "window";

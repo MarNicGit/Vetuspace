@@ -1,15 +1,21 @@
+import { WindowManager } from "../managers/windowManager";
+import { WindowContainer } from "./windowContainer";
+
 export class DesktopIcon extends HTMLElement {
     title:string;
-    action:string;
+    startProgram:string;
     iconUrl:string;
+    windowManager: WindowManager;
 
     constructor(){
         super();
+
+        this.windowManager = new WindowManager();
     }
 
     connectedCallback(){
         this.title = this.getAttribute('title');
-        this.action = this.getAttribute('action');
+        this.startProgram = this.getAttribute('startProgram');
         this.iconUrl = this.getAttribute('icon');
 
         this.registerListeners();
@@ -28,6 +34,7 @@ export class DesktopIcon extends HTMLElement {
 
     onDoubleClick(e: MouseEvent){
         console.log(e);
+        this.windowManager.SpawnNewWindowOfType(this.startProgram);
         this.unselect();
     }
 

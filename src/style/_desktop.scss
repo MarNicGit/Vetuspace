@@ -1,4 +1,6 @@
 @use "sass:color";
+@use 'var' as *;
+
 desktop-base {
   display: block;
   width: 100vw;

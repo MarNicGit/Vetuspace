@@ -6,6 +6,7 @@ export class Desktop extends HTMLElement {
     }
 
     connectedCallback(){
+        this.id = 'desktop';
         this.registerListeners();
     }
 
@@ -20,5 +21,9 @@ export class Desktop extends HTMLElement {
             const icon = icons[index] as DesktopIcon;
             icon.unselect();
         }
+    }
+
+    static Get():HTMLElement{
+        return document.getElementById('desktop');
     }
 }

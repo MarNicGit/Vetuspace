@@ -1,3 +1,3 @@
-import { ElementLoader } from "./elementLoader";
+import { ElementManager } from "./managers/elementManager";
 
-new ElementLoader;
+new ElementManager;
