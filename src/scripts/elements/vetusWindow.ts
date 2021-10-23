@@ -9,8 +9,8 @@ export class VetusWindow extends HTMLElement {
     }
 
     connectedCallback(){
-        this.registerListeners();
         this.render();
+        this.registerListeners();
     }
 
     registerListeners(){
@@ -19,8 +19,23 @@ export class VetusWindow extends HTMLElement {
 
     render(){
         let titlebar = Doc.createElement('div','titlebar');
+        let windowLabel = Doc.createElement('label')
+        windowLabel.textContent = this.windowTitle;
+        titlebar.append(windowLabel);
+        let buttonContainer = Doc.createElement('div','btnContainer');
 
-        titlebar.textContent = this.windowTitle;
+        let closeBtn = Doc.createElement('button', 'closeBtn');
+        closeBtn.textContent = 'x';
+
+        closeBtn.addEventListener('click', ()=>this.closeWindow())
+
+        buttonContainer.appendChild(closeBtn);
+        titlebar.append(buttonContainer);
+
         this.append(titlebar);
+    }
+
+    closeWindow() {
+        this.remove();
     }
 }
