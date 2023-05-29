@@ -1,1 +1,5 @@
-<p>icon works!</p>
+<ng-container class="test"
+  *ngIf="model">
+  <img [src]="model.src" [alt]="model.alt" />
+  <label [innerText]="model.label"></label>
+</ng-container>

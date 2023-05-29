@@ -1,0 +1,44 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: var(--desktop-icon-size);
+  position: relative;
+
+  img {
+    width: var(--desktop-icon-size);
+    height: var(--desktop-icon-size);
+    position: relative;
+  }
+
+  label {
+    margin-top: 8px;
+    font-size: var(--desktop-icon-font-size);
+    user-select: none;
+  }
+  &.selected {
+    color: white;
+
+    --adjusted-bg: var(--icon-selected);
+
+    :host::after {
+      content: " ";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(var(--adjusted-bg), 50%);
+    }
+    label {
+      background-color: var(--adjusted-bg);
+      padding: 2px 4px;
+    }
+  }
+
+  &.lastSelected{
+    label{
+        border: 1px dashed var(--icon-last-selected);
+    }
+}
+}

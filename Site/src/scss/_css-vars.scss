@@ -1,4 +1,6 @@
 :root {
+  /* #endregion */
+
   /* #region hypnospace palette, thanks Jay Tholen! */
   --hyp-01: rgb(34 32 52);
   --hyp-02: rgb(158 199 34);
@@ -35,9 +37,16 @@
   --hyp-33: rgb(20 20 20);
   /* #endregion */
 
+  --desktop-icon-size: 64px;
+  --desktop-icon-font-size: 10pt;
+  --desktop-padding: 32px;
+
   /* #region  default theme */
   --text-primary: var(--hyp-33);
   --desktop-bg: var(--hyp-06);
-  
+
+  --icon-selected: var(--hyp-20);
+  --icon-last-selected: var(--hyp-09);
+
   /* #endregion */
 }
