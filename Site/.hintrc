@@ -4,5 +4,11 @@
   ],
   "hints": {
     "axe/text-alternatives": "off"
-  }
+  },
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not ios_saf <= 16.4",
+    "not safari <= 16.4"
+  ]
 }
