@@ -1,5 +1,5 @@
 :root {
-  /* #region hypnospace pallette, thanks Jay Tholen! */
+  /* #region hypnospace palette, thanks Jay Tholen! */
   --hyp-01: rgb(34 32 52);
   --hyp-02: rgb(158 199 34);
   --hyp-03: rgb(91 90 101);
@@ -35,4 +35,9 @@
   --hyp-33: rgb(20 20 20);
   /* #endregion */
 
+  /* #region  default theme */
+  --text-primary: var(--hyp-33);
+  --desktop-bg: var(--hyp-06);
+  
+  /* #endregion */
 }
