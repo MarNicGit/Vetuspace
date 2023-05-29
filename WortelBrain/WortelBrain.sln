@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WortelBrain.Api", "WortelBrain.Api\WortelBrain.Api.csproj", "{BED335F7-504D-4EAB-A050-C0E2EF7A9E1A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WortelBrain.Lib", "WortelBrain.Lib\WortelBrain.Lib.csproj", "{F67BD1B8-A2A0-4FB9-9DFB-F58EAD1DADBC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{99146F92-FB13-4C71-8A2E-AD833A045470}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BED335F7-504D-4EAB-A050-C0E2EF7A9E1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BED335F7-504D-4EAB-A050-C0E2EF7A9E1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BED335F7-504D-4EAB-A050-C0E2EF7A9E1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BED335F7-504D-4EAB-A050-C0E2EF7A9E1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F67BD1B8-A2A0-4FB9-9DFB-F58EAD1DADBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F67BD1B8-A2A0-4FB9-9DFB-F58EAD1DADBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F67BD1B8-A2A0-4FB9-9DFB-F58EAD1DADBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F67BD1B8-A2A0-4FB9-9DFB-F58EAD1DADBC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5E9D5A43-E6A1-462F-AC33-97CA1F7CA207}
+	EndGlobalSection
+EndGlobal
