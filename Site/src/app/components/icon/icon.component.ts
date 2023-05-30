@@ -10,7 +10,8 @@ export class IconComponent {
   @Input() model: IconModel;
   @HostBinding('class.selected') isSelected:boolean = false;
   @HostListener('click', ['$event.target']) onClick(){
-    this.isSelected = !this.isSelected;
+    this.model.selected = !this.model.selected;
+    this.isSelected = this.model.selected;
   }
 }
 
