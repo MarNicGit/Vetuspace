@@ -1,4 +1,5 @@
 import { Component, HostBinding, HostListener, Input } from '@angular/core';
+import { IconModel } from '../../models/IconModel';
 
 @Component({
   selector: 'app-icon',
@@ -13,8 +14,3 @@ export class IconComponent {
   }
 }
 
-export class IconModel{
-  src: string;
-  label: string;
-  alt: string;
-}

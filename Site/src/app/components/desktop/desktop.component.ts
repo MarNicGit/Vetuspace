@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IconModel } from '../icon/icon.component';
+import { IconModel } from "../../models/IconModel";
 
 @Component({
   selector: 'app-desktop',
