@@ -1,4 +1,3 @@
-
 export class IconModel {
   src: string;
   label: string;
