@@ -8,7 +8,7 @@ import { IconModel } from '../../models/IconModel';
 })
 export class IconComponent {
   @Input() model: IconModel;
-  @HostBinding('class.selected') isSelected:boolean = false;
+  @HostBinding('class.selected') isSelected = false;
   @HostListener('click', ['$event.target']) onClick(){
     this.model.selected = !this.model.selected;
     this.isSelected = this.model.selected;
