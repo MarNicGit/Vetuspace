@@ -2,7 +2,7 @@ import { Component, HostBinding, HostListener, Input } from '@angular/core';
 import { IconModel } from '../../models/IconModel';
 
 @Component({
-  selector: 'app-icon',
+  selector: 'vetus-icon',
   templateUrl: './icon.component.html',
   styleUrls: ['./icon.component.scss']
 })

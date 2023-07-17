@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IconModel } from "../../models/IconModel";
 
 @Component({
-  selector: 'app-desktop',
+  selector: 'vetus-desktop',
   templateUrl: './desktop.component.html',
   styleUrls: ['./desktop.component.scss']
 })
