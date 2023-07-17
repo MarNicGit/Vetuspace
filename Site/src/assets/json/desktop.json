@@ -1,0 +1,9 @@
+{
+    "items": [
+        {
+            "label": "About",
+            "icon": "about",
+            "action": "openApp:about"
+        }
+    ]
+}

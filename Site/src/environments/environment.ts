@@ -2,5 +2,6 @@ import { IEnvironment } from "./iEnvironment";
 
 export const environment: IEnvironment = {
     api: '',
-    environmentName: 'dev'
+    environmentName: 'dev',
+    jsonRoot: 'assets/json/'
 };
