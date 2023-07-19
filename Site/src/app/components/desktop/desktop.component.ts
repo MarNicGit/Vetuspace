@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IconModel } from "../../models/IconModel";
+import { IconModel } from "../../models/iconModel";
 
 @Component({
   selector: 'vetus-desktop',

@@ -1,5 +1,5 @@
 import { Component, HostBinding, HostListener, Input } from '@angular/core';
-import { IconModel } from '../../models/IconModel';
+import { IconModel } from '../../models/iconModel';
 
 @Component({
   selector: 'vetus-icon',
